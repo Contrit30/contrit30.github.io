@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Interactive form</h1>
+<p id="description">Please, spend a few minutes for filling this form.</p>
+<form id="survey-form">
+  <label id="name-label" for "name">Name</label><br>
+  <input id="name" type="text" name="name" placeholder="Enter your name" required><br>
+  <label id="email-label" for "email">Email</label><br>
+  <input id="email" type="email" name="email" placeholder="Enter your email" required><br>
+    <label for "number" id="number-label">Age</label><br>
+  <input id="number" type="number" name="age" min="18" max="99" placeholder="Age"><br>
+  <label for "dropdown">Choose your profession</label>
+  <select id="dropdown">
+    <option value="civil servant">civil servant</option>
+    <option value="student">student</option>
+    <option value="military">military</option>
+    <option value="other">other</option>
+  </select><br>
+  <p>Specify your gender:</p>
+   <label for "male">Male</label>
+  <input id="male" type="radio" name="gender" value="male">
+  <label for "female">Female</label>
+  <input id="female" type="radio" name="gender" value="female"><br>
+  <p>What goal do you have?</p>
+  <label for "programming">Programming</label>
+  <input id="programming" type="radio" name="choosing" value="programming">
+    <label for "testing">Testing</label>
+  <input id="testing" type="radio" name="choosing" value="testing">
+    <label for "otherWay">Other</label>
+  <input id="otherWay" type="radio" name="choosing" value="other">
+  <label for "nothing">I don't know</label>
+  <input id="nothing" type="radio" name="choosing" value="None">
+  <p>What programming language do you know or was faced with?</p>
+  <label><input type="checkbox" name="language" value="JS">JS</label>
+  <label><input type="checkbox" name="language" value="Python">Python</label>
+  <label><input type="checkbox" name="language" value="C##">C##</label>
+  <label><input type="checkbox" name="language" value="Java">Java</label>
+  <label><input type="checkbox" name="language" value="Someone">Someone else</label>
+  <p>Specify it:</p>
+  <input type="text"><br>
+  <p>Please write your comments and suggestions here:</p>
+  <textarea placeholder="Comments" id="comments"></textarea>
+  <p>
+    <button id="submit" type="submit">Submit</button>
+      </p>
+</form>
+</body>
+</html>
